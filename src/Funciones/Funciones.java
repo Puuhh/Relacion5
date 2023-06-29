@@ -75,6 +75,24 @@ import java.util.Scanner;
 		}
 		return triangular;
 	}
-	
-	
+	public static int maxnum(int m[][]) {
+		int num= m[0][0];
+		for(int fila=0; fila<m.length; fila++) {
+			for (int col=0; col<fila; col++) {
+				if (m[fila][col]>num)
+					num=m[fila][col];
+			}
+			}
+		return num;
+	}
+	public static int minnum(int m[][]) {
+		int num= m[0][0];
+		for(int fila=0; fila<m.length; fila++) {
+			for (int col=0; col<fila; col++) {
+				if (m[fila][col]<num)
+					num=m[fila][col];
+			}
+			}
+		return num;
+	}
 }
